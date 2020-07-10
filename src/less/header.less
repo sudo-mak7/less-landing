@@ -1,0 +1,38 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#header {
+  .flex-center;
+  justify-content: flex-start;
+  padding-top: 7%;
+  background: url('/dist/img/header_bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 547px;
+
+  & .text {
+    text-align: center;
+    margin-bottom: 60px;
+
+    & * {
+      font-weight: normal;
+    }
+
+    & h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    & h4 {
+      font-size: 30px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    background-color: @main-bg-color;
+  }
+}
